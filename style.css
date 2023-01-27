@@ -1,0 +1,104 @@
+
+body { 
+    background-color: #F5E7D7;
+    font-family:'Rosario';
+    font-size: 20px;
+}
+h1 {
+    font-family:'Lobster Two';
+    font-size: 64px;
+    color: #304f46;
+}
+h2 {
+    font-family:'Lobster Two';
+    font-size: 36px;
+    color: #304f46;
+}
+h3 {
+    font-family:'Rosario';
+    font-weight: bold;
+    font-size: 20px;
+    color: #304f46;
+}
+.image {
+    height: 300px;
+    padding: 25px;
+    align-items: right;
+}
+.block {
+    align-items: right;
+    padding: 10px;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    padding: 2%;
+    float: left;
+}
+.navi {
+    width: 50%;
+    margin-left: 50%;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.content {
+    max-width: 50%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+.button {
+    background-color: #6da6ba;
+    color: white;
+    border-color: #304f46;
+    border-width: 8px;
+    padding: 4px;
+    text-align: center;
+    font-size: 28pt;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 280px;
+    grid-area: 3 / 1;
+}
+.intro {
+    display: flex;
+}
+.gridContainer {
+    display: grid;
+    gap: 24px 48px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "imageA AboutMe SkillsBox"
+    "imageA AboutMe SkillsBox"
+    "button HowIWork SkillsBox"
+}
+.imageA {
+    grid-area: 2 / 1;
+}
+.AboutMe {
+    grid-area: 2 / 2 / span 6 / span 8;
+}
+.HowIWork {
+    grid-area: 4 / 2 / span 6 / span 8;
+}
+.SkillsBox {
+    background-color: #6da6ba;
+    padding: 16px;
+    border-width: 4px;
+    border-color:  #304f46;
+    border-radius: 8px;
+    grid-area: 2 / 10 / span 4 / span 8;
+}
+
+footer {
+    background-color: #6da6ba;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+}g
