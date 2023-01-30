@@ -1,4 +1,7 @@
-
+* {
+    padding-left: 8px;
+    padding-right: 8px;
+}
 body { 
     background-color: #F5E7D7;
     font-family:'Rosario';
@@ -32,6 +35,11 @@ h5 {
     font-weight: bold;
     font-size: 20px;
 }
+h6 {
+    font-family: 'Rosario';
+    font-weight: bold;
+    font-size: 36px;
+}
 
 .image {
     height: 300px;
@@ -45,12 +53,25 @@ h5 {
     float: left;
 }
 
-a.navigation {
-    display: inline-block;
-    padding: 16px;
-    width: 48px;
-    height: 32px;
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 16px;
     text-align: center;
+}
+
+.navLinks {
+    list-style: none;
+}
+.flex-item {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #304f46;
+    text-decoration: none;
+    cursor: pointer;
+    
 }
 .content {
     max-width: 50%;
@@ -62,8 +83,9 @@ a.navigation {
 .button {
     background-color: #6da6ba;
     color: white;
+    border-style: solid;
     border-color: #304f46;
-    border-width: 8px;
+    border-width: 2px;
     padding: 4px;
     text-align: center;
     font-size: 28pt;
@@ -75,9 +97,23 @@ a.navigation {
 .intro {
     display: flex;
 }
+#headline {
+    vertical-align: top;
+}
+.grid2{
+    display: grid;
+    column-gap: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+    "theTeam" "myRoles" "constraints" "toolsUsed";
+}
 .gridContainer {
     display: grid;
     gap: 24px 48px;
+    padding-left: 16px;
+    padding-right: 16px;
     grid-template-columns: auto auto auto;
     grid-template-areas:
     "imageA AboutMe SkillsBox"
@@ -86,6 +122,11 @@ a.navigation {
 }
 .imageA {
     grid-area: 2 / 1;
+    border-style: solid;
+    border-color: #304f46;
+    border-width: 2px;
+    border-radius: 8px;
+    align-items: center;
 }
 .AboutMe {
     grid-area: 2 / 2 / span 6 / span 8;
@@ -96,30 +137,60 @@ a.navigation {
 .SkillsBox {
     background-color: #6da6ba;
     padding: 16px;
-    border-width: 4px;
+    border-style: solid;
+    border-width: 2px;
     border-color:  #304f46;
     border-radius: 8px;
     grid-area: 2 / 10 / span 4 / span 8;
 }
+
+#tools {
+    text-align: center;
+}
 .portfolioSample {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     padding: 24px;
 }
-
-.IntroText {
-    display: grid;
-    grid-template-columns: 4, 1fr;
-    gap: 16px;
-    grid-template-rows: 2, 1fr ;
+.row {
+    display: flex;
+    align-items:stretch;
 }
+
+.column {
+    flex: 33.33%;
+    padding: 16px;
+}
+#research {
+    padding: 8 px;
+    margin-top: 24px;
+}
+#summaryHeadline {
+    max-width: 33%;
+    float: left;
+    padding: 16px;  
+    text-align: top;
+
+}
+#summaryContent {
+    max-width: 67%;
+    float: left;
+    background-color: #6da6ba;
+    border-color: #304f46;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+
 
 footer {
     background-color: #6da6ba;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding-right: 16px;
+    padding-left: 16px;
     margin-top: 10%;
 }
