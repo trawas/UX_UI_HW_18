@@ -161,18 +161,16 @@ h6 {
     flex: 33.33%;
     padding: 16px;
 }
-#research {
     padding: 8 px;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
-#summaryHeadline {
     max-width: 33%;
     float: left;
     padding: 16px;  
     text-align: top;
 
 }
-#summaryContent {
     max-width: 67%;
     float: left;
     background-color: #6da6ba;
@@ -180,10 +178,123 @@ h6 {
     border-radius: 8px;
     border-width: 2px;
     border-style: solid;
+    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
+#surveyResultsPic {
+    max-width: 67%;
+    float: right;
+    padding: 16px;
+}
 
+#surveyResultsText {
+    max-width: 33%;
+    float: left;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 24px;
+}
+#swotResultsPic {
+    max-width: 58%;
+    float: left;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+#swotResultsText {
+    max-width: 38% ;
+    float: left;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+}
 
+.userPersonasText {
+    max-width: 60% ;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 24px;
+}
+.userPersonas {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+#upLynne {
+    flex: 1;
+}
+
+#upTravis {
+    flex: 1;
+}
+
+#featurePrioritization {
+    float: right;
+}
+.arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prototypeImages {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+#userFlow {
+    flex:1;
+}
+
+#lofiPrototype {
+    flex:1;
+}
+
+.feedback {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+#feedbackImage {
+    flex:1;
+}
+
+#feedbackText {
+    flex:1;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+
+}
+.iteration {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+
+#iteration1 {
+    flex:1
+}
+
+#iteration2 {
+    flex:1
+}
+
+.iterationText {
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    max-width: 60%;
+}
+
+<!-Footer->
 footer {
     background-color: #6da6ba;
     color: white;
@@ -193,4 +304,9 @@ footer {
     padding-right: 16px;
     padding-left: 16px;
     margin-top: 10%;
+}
+.userJourneys {
+    display: flex;
+    float: left;
+    padding: 24px;
 }
