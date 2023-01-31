@@ -1,6 +1,7 @@
 * {
     padding-left: 8px;
     padding-right: 8px;
+    text-decoration: none;
 }
 body { 
     background-color: #F5E7D7;
@@ -39,6 +40,14 @@ h6 {
     font-family: 'Rosario';
     font-weight: bold;
     font-size: 36px;
+}
+
+h7 {
+    font-family: 'Rosario';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 24px;
+    color: #6da6ba;
 }
 
 .image {
@@ -94,12 +103,6 @@ h6 {
     width: 280px;
     grid-area: 3 / 1;
 }
-.intro {
-    display: flex;
-}
-#headline {
-    vertical-align: top;
-}
 .grid2{
     display: grid;
     column-gap: 16px;
@@ -147,6 +150,9 @@ h6 {
 #tools {
     text-align: center;
 }
+#title {
+    padding-left: 40px;
+}
 .portfolioSample {
     display: flex;
     justify-content: space-between;
@@ -155,71 +161,90 @@ h6 {
 .row {
     display: flex;
     align-items:stretch;
+    padding-left: 24px;
 }
 
 .column {
     flex: 33.33%;
-    padding: 16px;
+    padding: 32px;
 }
+
+.intro {
+    display: grid;
+    grid-template-columns: 25% 25% 45%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "weGigPhoto headline1 none"
+    "weGigPhoto problem problemText"
+    "none solution solutionText";
+}
+
+.summary {
+    display: flex;
     padding: 8 px;
     margin-top: 24px;
     margin-bottom: 24px;
 }
-    max-width: 33%;
-    float: left;
+.summaryHeadline {
+    flex-grow: 1;
     padding: 16px;  
-    text-align: top;
+    border: none;
+    margin-bottom: 24px;
+    margin-top: 24px;
 
 }
-    max-width: 67%;
-    float: left;
+.summaryContent {
+    flex-grow:  2;
     background-color: #6da6ba;
     border-color: #304f46;
     border-radius: 8px;
     border-width: 2px;
     border-style: solid;
     margin-bottom: 24px;
-    margin-top: 24px;
+    list-style-position: inside;
 }
-
-#surveyResultsPic {
-    max-width: 67%;
-    float: right;
-    padding: 16px;
+.surveyContainer {
+    display: flex;
+    float: left;
+    justify-content: center;
 }
 
 #surveyResultsText {
-    max-width: 33%;
-    float: left;
+    max-width: 40%;
     border-color: #6da6ba;
     border-radius: 8px;
     border-width: 2px;
     border-style: solid;
+    margin-top: 24px;
     margin-bottom: 24px;
+    
 }
 #swotResultsPic {
     max-width: 58%;
-    float: left;
+    float: right;
     padding: 16px;
     margin-bottom: 24px;
 }
 #swotResultsText {
     max-width: 38% ;
-    float: left;
+    float: right;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.userPersonasText {
+    display: inline-block;
+    max-width: 60%;
     border-color: #6da6ba;
     border-radius: 8px;
     border-width: 2px;
     border-style: solid;
 }
 
-.userPersonasText {
-    max-width: 60% ;
-    border-color: #6da6ba;
-    border-radius: 8px;
-    border-width: 2px;
-    border-style: solid;
-    margin-bottom: 24px;
-}
 .userPersonas {
     display: flex;
     float: left;
@@ -234,14 +259,31 @@ h6 {
 }
 
 #featurePrioritization {
-    float: right;
+    display: block;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+}
+#arrows {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%
 }
 .arrow {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 60%
 }
-
+.userJourneys {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+#prototyping {
+    clear: both;
+}
 .prototypeImages {
     display: flex;
     float: left;
@@ -279,22 +321,68 @@ h6 {
 }
 
 #iteration1 {
-    flex:1
+    flex:1;
 }
 
 #iteration2 {
-    flex:1
+    flex:1;
 }
 
 .iterationText {
+    clear: both;
+    display: block;
+    max-width: 60%;
     border-color: #6da6ba;
     border-radius: 8px;
     border-width: 2px;
     border-style: solid;
-    max-width: 60%;
+    list-style: inside;  
 }
 
-<!-Footer->
+.profileCreation {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+#newUser {
+    flex:1/6;
+}
+
+#musicianOrVenue {
+    flex:1/6;
+}
+
+#addProfileInfo {
+    flex:1/6;
+}
+
+#venueInfo {
+    flex:1/6;
+}
+
+#venueHours {
+    flex:1/6;
+}
+
+#venuePhotos {
+    flex:1/6;
+}
+
+#profileText {
+    clear: both;
+    margin-right: 10%;
+}
+.reviewProcess {
+    display: flex;
+}
+
+#reviewArtist {
+    flex: 1/2;
+}
+#reviewArtistSummary {
+    flex: 1/2;
+}
+
 footer {
     background-color: #6da6ba;
     color: white;
@@ -305,8 +393,19 @@ footer {
     padding-left: 16px;
     margin-top: 10%;
 }
-.userJourneys {
-    display: flex;
-    float: left;
-    padding: 24px;
+@media screen and (max-width: 600) {
+    .column {
+        flex-direction: column;
+        width: 100%;
 }
+    .gridContainer {
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "image"
+            "AboutMe"
+            "HowIWork"
+            "SkillsBox"
+            ;
+    }}
+
+    
