@@ -1,0 +1,411 @@
+* {
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+}
+body { 
+    background-color: #F5E7D7;
+    font-family:'Rosario';
+    font-size: 20px;
+}
+h1 {
+    font-family:'Lobster Two';
+    font-size: 64px;
+    color: #304f46;
+}
+h2 {
+    font-family:'Lobster Two';
+    font-size: 36px;
+    color: #304f46;
+}
+h3 {
+    font-family:'Rosario';
+    font-weight: bold;
+    font-size: 20px;
+    color: #304f46;
+}
+h4 {
+    font-family: 'Rosario';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: 'Rosario';
+    font-weight: bold;
+    font-size: 20px;
+}
+h6 {
+    font-family: 'Rosario';
+    font-weight: bold;
+    font-size: 36px;
+}
+
+h7 {
+    font-family: 'Rosario';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 24px;
+    color: #6da6ba;
+}
+
+.image {
+    height: 300px;
+    padding: 25px;
+    align-items: right;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    padding: 2%;
+    float: left;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 16px;
+    text-align: center;
+}
+
+.navLinks {
+    list-style: none;
+}
+.flex-item {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #304f46;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.content {
+    max-width: 50%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+.button {
+    background-color: #6da6ba;
+    color: white;
+    border-style: solid;
+    border-color: #304f46;
+    border-width: 2px;
+    padding: 4px;
+    text-align: center;
+    font-size: 28pt;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 280px;
+    grid-area: 3 / 1;
+}
+.grid2{
+    display: grid;
+    column-gap: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+    "theTeam" "myRoles" "constraints" "toolsUsed";
+}
+.gridContainer {
+    display: grid;
+    gap: 24px 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "imageA AboutMe SkillsBox"
+    "imageA AboutMe SkillsBox"
+    "button HowIWork SkillsBox"
+}
+.imageA {
+    grid-area: 2 / 1;
+    border-style: solid;
+    border-color: #304f46;
+    border-width: 2px;
+    border-radius: 8px;
+    align-items: center;
+}
+.AboutMe {
+    grid-area: 2 / 2 / span 6 / span 8;
+}
+.HowIWork {
+    grid-area: 4 / 2 / span 6 / span 8;
+}
+.SkillsBox {
+    background-color: #6da6ba;
+    padding: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  #304f46;
+    border-radius: 8px;
+    grid-area: 2 / 10 / span 4 / span 8;
+}
+
+#tools {
+    text-align: center;
+}
+#title {
+    padding-left: 40px;
+}
+.portfolioSample {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+.row {
+    display: flex;
+    align-items:stretch;
+    padding-left: 24px;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 32px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 25% 25% 45%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "weGigPhoto headline1 none"
+    "weGigPhoto problem problemText"
+    "none solution solutionText";
+}
+
+.summary {
+    display: flex;
+    padding: 8 px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.summaryHeadline {
+    flex-grow: 1;
+    padding: 16px;  
+    border: none;
+    margin-bottom: 24px;
+    margin-top: 24px;
+
+}
+.summaryContent {
+    flex-grow:  2;
+    background-color: #6da6ba;
+    border-color: #304f46;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 24px;
+    list-style-position: inside;
+}
+.surveyContainer {
+    display: flex;
+    float: left;
+    justify-content: center;
+}
+
+#surveyResultsText {
+    max-width: 40%;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+}
+#swotResultsPic {
+    max-width: 58%;
+    float: right;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+#swotResultsText {
+    max-width: 38% ;
+    float: right;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.userPersonasText {
+    display: inline-block;
+    max-width: 60%;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.userPersonas {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+#upLynne {
+    flex: 1;
+}
+
+#upTravis {
+    flex: 1;
+}
+
+#featurePrioritization {
+    display: block;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+}
+#arrows {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%
+}
+.arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%
+}
+.userJourneys {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+#prototyping {
+    clear: both;
+}
+.prototypeImages {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+#userFlow {
+    flex:1;
+}
+
+#lofiPrototype {
+    flex:1;
+}
+
+.feedback {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+#feedbackImage {
+    flex:1;
+}
+
+#feedbackText {
+    flex:1;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+
+}
+.iteration {
+    display: flex;
+    float: left;
+    padding: 24px;
+}
+
+#iteration1 {
+    flex:1;
+}
+
+#iteration2 {
+    flex:1;
+}
+
+.iterationText {
+    clear: both;
+    display: block;
+    max-width: 60%;
+    border-color: #6da6ba;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    list-style: inside;  
+}
+
+.profileCreation {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+#newUser {
+    flex:1/6;
+}
+
+#musicianOrVenue {
+    flex:1/6;
+}
+
+#addProfileInfo {
+    flex:1/6;
+}
+
+#venueInfo {
+    flex:1/6;
+}
+
+#venueHours {
+    flex:1/6;
+}
+
+#venuePhotos {
+    flex:1/6;
+}
+
+#profileText {
+    clear: both;
+    margin-right: 10%;
+}
+.reviewProcess {
+    display: flex;
+}
+
+#reviewArtist {
+    flex: 1/2;
+}
+#reviewArtistSummary {
+    flex: 1/2;
+}
+
+footer {
+    background-color: #6da6ba;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 10%;
+}
+@media screen and (max-width: 600) {
+    .column {
+        flex-direction: column;
+        width: 100%;
+}
+    .gridContainer {
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "image"
+            "AboutMe"
+            "HowIWork"
+            "SkillsBox"
+            ;
+    }}
+
+    
